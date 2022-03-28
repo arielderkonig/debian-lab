@@ -25,9 +25,8 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ buster ma
 apt-get update && apt-get install -y brave-keyring brave-browser
 
 #============ INSTALL SPOTIFY
-apt-key adv --fetch-keys https://download.spotify.com/debian/pubkey_0D811D58.gpg
-echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list
+apt-key adv --fetch-keys https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg
+echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list
 apt-get update && apt-get install -y spotify-client
-
 
 ##nano /etc/NetworkManager/NetworkManager.conf
