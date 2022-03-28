@@ -10,13 +10,13 @@ apt-get install -y eom pluma mate-calc engrampa
 apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
 apt-get install -y alsa-tools alsa-utils alsa-oss
 
-dpkg -i ./source/paper-icon-theme_1.5.0_all.deb
-dpkg -i ./source/deepin-gtk-theme_17.10.11_all.deb
+dpkg -i ./srcmate/paper-icon-theme_1.5.0_all.deb
+dpkg -i ./srcmate/deepin-gtk-theme_17.10.11_all.deb
 
 #============ INSTALL LIBREOFFICE
 apt-get install -y libreoffice-calc --no-install-recommends
 apt-get install -y libreoffice-writer --no-install-recommends
-apt-get install -y libreoffice-gtk2
+apt-get install -y libreoffice-gtk3
 
 #============ INSTALL BRAVE-BROWSER
 apt-get install -y apt-transport-https gnupg
@@ -29,4 +29,7 @@ apt-key adv --fetch-keys https://download.spotify.com/debian/pubkey_5E3C45D7B312
 echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list
 apt-get update && apt-get install -y spotify-client
 
-##nano /etc/NetworkManager/NetworkManager.conf
+#============ CHANGE SETTINGS
+sed -i 's/managed=false/managed=true/g' /etc/NetworkManager/NetworkManager.conf
+unzip ./srcmate/config.zip -d /etc/skel
+reboot
