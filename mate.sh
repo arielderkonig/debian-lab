@@ -10,8 +10,8 @@ apt-get install -y eom pluma mate-calc engrampa
 apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
 apt-get install -y alsa-tools alsa-utils alsa-oss
 
-dpkg -i ./srcmate/paper-icon-theme_1.5.0_all.deb
-dpkg -i ./srcmate/deepin-gtk-theme_17.10.11_all.deb
+dpkg -i ./src-mate/paper-icon-theme_1.5.0_all.deb
+dpkg -i ./src-mate/deepin-gtk-theme_17.10.11_all.deb
 
 #============ INSTALL LIBREOFFICE
 apt-get install -y libreoffice-calc --no-install-recommends
@@ -31,5 +31,5 @@ apt-get update && apt-get install -y spotify-client
 
 #============ CHANGE SETTINGS
 sed -i 's/managed=false/managed=true/g' /etc/NetworkManager/NetworkManager.conf
-unzip ./srcmate/config.zip -d /etc/skel
+unzip ./src-mate/config.zip -d /etc/skel
 reboot
