@@ -1,7 +1,10 @@
 #!/bin/bash
-#===================================================================
-# INSTALLING MATE DESKTOP ENVIRONMENT - DEBIAN 10
-#===================================================================
+echo "#deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main" > /etc/apt/source-list.d/pgdg.list
+echo "#deb http://nightly.odoo.com/13.0/nightly/deb/ ./" > /etc/apt/source-list.d/odoo.list
+apt-get update && apt-get upgrade
+##===================================================================
+## ==== INSTALLING MATE DESKTOP ENVIRONMENT - DEBIAN 10
+##===================================================================
 apt-get install -y xserver-xorg-core sddm open-vm-tools
 apt-get install -y --no-install-recommends mate-desktop-environment-core mate-menu
 apt-get install -y mate-tweak network-manager-gnome network-manager-openvpn-gnome
@@ -10,8 +13,12 @@ apt-get install -y eom pluma mate-calc engrampa
 apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
 apt-get install -y alsa-tools alsa-utils alsa-oss mate-applets
 
-dpkg -i ./src-mate/paper-icon-theme_1.5.0_all.deb
-dpkg -i ./src-mate/deepin-gtk-theme_17.10.11_all.deb
+wget -O ./source/paper-icon-theme_all.deb http://ftp.de.debian.org/debian/pool/main/p/paper-icon-theme/p$
+wget -O ./source/atom-amd64.deb https://atom.io/download/deb
+
+dpkg -i ./source/deepin-gtk-theme_17.10.11_all.deb && apt-get -f install
+dpkg -i ./source/paper-icon-theme_all.deb && apt-get -f install
+dpkg -i ./source/atom-amd64.deb && apt-get -f install
 
 #============ INSTALL LIBREOFFICE
 apt-get install -y libreoffice-calc --no-install-recommends
@@ -31,9 +38,9 @@ apt-get update && apt-get install -y spotify-client
 
 #============ CHANGE SETTINGS
 sed -i 's/managed=false/managed=true/g' /etc/NetworkManager/NetworkManager.conf
-unzip ./src-mate/config.zip -d /etc/skel
-unzip ./src-mate/simplicity -d /usr/share/sddm/themes
-cp ./src-mate/sddm.conf /etc/
+unzip ./source/simplicity -d /usr/share/sddm/themes
+cp ./source/cfg-sddm/sddm.conf /etc/
+mkdir -p /etc/skel/.config
+cp -r ./source/cfg-mate/* /etc/skel/.config
 rm -rf /home/ocusr00 && deluser ocusr00
 adduser ocusr00
-reboot

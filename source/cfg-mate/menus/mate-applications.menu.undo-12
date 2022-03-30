@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Applications</Name>
+	<MergeFile type="parent">/etc/xdg/menus/mate-applications.menu</MergeFile>
+	<Menu>
+		<Name>Accessories</Name>
+		<Exclude>
+			<Filename>compton.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>engrampa.desktop</Filename>
+			<Filename>mate-calc.desktop</Filename>
+			<Filename>pluma.desktop</Filename>
+			<Filename>mate-font-viewer.desktop</Filename>
+			<Filename>compton.desktop</Filename>
+			<Filename>mate-about.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+</Menu>
