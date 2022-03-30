@@ -8,7 +8,7 @@ apt-get install -y mate-tweak network-manager-gnome network-manager-openvpn-gnom
 apt-get install -y sakura gnupg wget git zip unzip htop
 apt-get install -y eom pluma mate-calc engrampa
 apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
-apt-get install -y alsa-tools alsa-utils alsa-oss
+apt-get install -y alsa-tools alsa-utils alsa-oss mate-applets
 
 dpkg -i ./src-mate/paper-icon-theme_1.5.0_all.deb
 dpkg -i ./src-mate/deepin-gtk-theme_17.10.11_all.deb
@@ -32,4 +32,8 @@ apt-get update && apt-get install -y spotify-client
 #============ CHANGE SETTINGS
 sed -i 's/managed=false/managed=true/g' /etc/NetworkManager/NetworkManager.conf
 unzip ./src-mate/config.zip -d /etc/skel
+unzip ./src-mate/simplicity -d /usr/share/sddm/themes
+cp ./src-mate/sddm.conf /etc/
+rm -rf /home/ocusr00 && deluser ocusr00
+adduser ocusr00
 reboot
