@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "#deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main" > /etc/apt/sources-list.d/pgdg.list
-echo "#deb http://nightly.odoo.com/13.0/nightly/deb/ ./" > /etc/apt/sources-list.d/odoo.list
+echo "#deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+echo "#deb http://nightly.odoo.com/13.0/nightly/deb/ ./" > /etc/apt/sources.list.d/odoo.list
 apt-get update && apt-get upgrade
 ##===================================================================
 ## ==== INSTALLING AWESOME DESKTOP ENVIRONMENT - DEBIAN 10
