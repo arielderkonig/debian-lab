@@ -8,14 +8,14 @@
     <shade_type>solid</shade_type>
     <pcolor>rgb(32,74,135)</pcolor>
     <scolor>rgb(60,143,37)</scolor>
-    <artist/>
+    <artist>(none)</artist>
   </wallpaper>
-  <wallpaper deleted="false">
-    <name>5143159.jpg</name>
-    <filename>/home/ocusr00/Documents/Wallpapers/5143159.jpg</filename>
-    <options>stretched</options>
-    <shade_type>solid</shade_type>
-    <pcolor>rgb(32,74,135)</pcolor>
+  <wallpaper deleted="true">
+    <name>desktop-background</name>
+    <filename>/usr/share/images/desktop-base/desktop-background</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
     <scolor>rgb(60,143,37)</scolor>
     <artist/>
   </wallpaper>

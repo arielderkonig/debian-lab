@@ -60,10 +60,9 @@
 		</Include>
 		<Layout>
 			<Merge type="menus"/>
-			<Filename>caja-browser.desktop</Filename>
 			<Filename>Engrampa Archive Manager.desktop</Filename>
+			<Filename>caja-browser.desktop</Filename>
 			<Filename>sakura.desktop</Filename>
-			<Filename>Control Center.desktop</Filename>
 			<Filename>mate-system-monitor.desktop</Filename>
 			<Filename>caja-computer.desktop</Filename>
 			<Filename>caja-home.desktop</Filename>
@@ -71,6 +70,7 @@
 			<Filename>mate-terminal.desktop</Filename>
 			<Filename>mate-network-scheme.desktop</Filename>
 			<Filename>org.opensc.notify.desktop</Filename>
+			<Filename>Control Center.desktop</Filename>
 			<Filename>mate-panel.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
