@@ -13,7 +13,7 @@ apt-get install -y eom pluma mate-calc engrampa
 apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
 apt-get install -y alsa-tools alsa-utils alsa-oss mate-applets
 
-wget -O ./source/paper-icon-theme_all.deb http://ftp.de.debian.org/debian/pool/main/p/paper-icon-theme/p$
+wget -O ./source/paper-icon-theme_all.deb http://ftp.de.debian.org/debian/pool/main/p/paper-icon-theme/paper-icon-theme_1.5.0+git20200312.aa3e8af-3_all.deb
 wget -O ./source/atom-amd64.deb https://atom.io/download/deb
 
 dpkg -i ./source/deepin-gtk-theme_17.10.11_all.deb && apt-get -f install
