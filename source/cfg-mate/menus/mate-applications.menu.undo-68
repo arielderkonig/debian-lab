@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Applications</Name>
+	<MergeFile type="parent">/etc/xdg/menus/mate-applications.menu</MergeFile>
+	<Menu>
+		<Name>Accessories</Name>
+		<Exclude>
+			<Filename>compton.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+		<Exclude>
+			<Filename>mate-font-viewer.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>atom.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>engrampa.desktop</Filename>
+		</Exclude>
+		<Include>
+			<Filename>Eye of MATE Image Viewer.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>Eye of MATE Image Viewer-1.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>MATE Color Selection.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>mate-calc.desktop</Filename>
+			<Filename>pluma.desktop</Filename>
+			<Filename>Eye of MATE Image Viewer.desktop</Filename>
+			<Filename>MATE Color Selection.desktop</Filename>
+			<Filename>engrampa.desktop</Filename>
+			<Filename>mate-font-viewer.desktop</Filename>
+			<Filename>compton.desktop</Filename>
+			<Filename>mate-about.desktop</Filename>
+			<Filename>atom.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>System</Name>
+		<Exclude>
+			<Filename>htop.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+		<Exclude>
+			<Filename>mate-terminal.desktop</Filename>
+		</Exclude>
+		<Include>
+			<Filename>Engrampa Archive Manager.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>Control Center.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>Engrampa Archive Manager.desktop</Filename>
+			<Filename>caja-browser.desktop</Filename>
+			<Filename>sakura.desktop</Filename>
+			<Filename>mate-system-monitor.desktop</Filename>
+			<Filename>caja-computer.desktop</Filename>
+			<Filename>caja-home.desktop</Filename>
+			<Filename>htop.desktop</Filename>
+			<Filename>mate-terminal.desktop</Filename>
+			<Filename>mate-network-scheme.desktop</Filename>
+			<Filename>org.opensc.notify.desktop</Filename>
+			<Filename>mate-panel.desktop</Filename>
+			<Filename>Control Center.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Graphics</Name>
+		<Exclude>
+			<Filename>mate-color-select.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+		<Exclude>
+			<Filename>eom.desktop</Filename>
+		</Exclude>
+	</Menu>
+	<Menu>
+		<Name>Office</Name>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+		<Include>
+			<Filename>libreoffice-startcenter.desktop</Filename>
+		</Include>
+	</Menu>
+	<Menu>
+		<Name>Multimedia</Name>
+		<Exclude>
+			<Filename>mate-volume-control.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/ocusr00/.local/share/applications</AppDir>
+	</Menu>
+</Menu>
