@@ -14,18 +14,18 @@ apt-get install -y breeze-cursor-theme fonts-inconsolata fonts-roboto
 apt-get install -y alsa-tools alsa-utils alsa-oss mate-applets
 
 wget -O ./source/paper-icon-theme_all.deb http://ftp.de.debian.org/debian/pool/main/p/paper-icon-theme/paper-icon-theme_1.5.0+git20200312.aa3e8af-3_all.deb
-wget -O ./source/codium_1.71.2.22258_amd64.deb https://github.com/VSCodium/vscodium/releases/download/1.71.2.22258/codium_1.71.2.22258_amd64.deb
-#wget -O ./source/atom-amd64.deb https://atom.io/download/deb
-
+wget -O ./source/atom-amd64.deb https://atom.io/download/deb
+#wget -O ./source/codium_1.71.2.22258_amd64.deb https://github.com/VSCodium/vscodium/releases/download/1.71.2.22258/codium_1.71.2.22258_amd64.deb
 
 dpkg -i ./source/deepin-gtk-theme_17.10.11_all.deb
 apt-get -y --fix-broken install
 dpkg -i ./source/paper-icon-theme_all.deb
 apt-get -y --fix-broken install
-dpkg -i ./codium_1.71.2.22258_amd64.deb
+dpkg -i ./source/atom-amd64.deb
 apt-get -y --fix-broken install
-#dpkg -i ./source/atom-amd64.deb
+#dpkg -i ./codium_1.71.2.22258_amd64.deb
 #apt-get -y --fix-broken install
+
 
 #============ INSTALL LIBREOFFICE
 apt-get install -y libreoffice-calc --no-install-recommends
